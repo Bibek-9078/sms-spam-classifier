@@ -56,4 +56,4 @@ The trained model achieved an **accuracy of 97.10 %** and **Precision is 100 %**
 
 ## Contact
 
-If you have any questions or suggestions regarding the project, feel free to contact **Bibek kumar panda** at **bibek$panda@gmail@gmail.com**.
+If you have any questions or suggestions regarding the project, feel free to contact **Bibek kumar panda** at **bibek4panda@gmail.com**.
