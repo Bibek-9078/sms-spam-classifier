@@ -53,6 +53,7 @@ The trained model achieved an **accuracy of 97.10 %** and **Precision is 100 %**
 | F1-score   | 86.49 %   |
 
 ## Check out my application on SMS Spam Detection
+https://sms-spam-classifier-mbmvvhdsmexxswave876fc.streamlit.app/
 
 ## Contact
 
