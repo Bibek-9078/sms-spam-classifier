@@ -1,21 +1,59 @@
-# sms-spam-classifier
-# Introduction 
-This project involves building an SMS spam classifier using Machine Learning techniques. The classifier accurately distinguishes between spam and non-spam messages, achieving high precision and accuracy.
+# SMS Spam classifier 
 
-# Context
+This project aims to develop a machine-learning model to detect spam messages in SMS text data. It utilizes natural language processing (NLP) techniques and a supervised learning algorithm to classify SMS messages as either spam or non-spam (ham).
 
-The SMS Spam Collection is a set of SMS tagged messages that have been collected for SMS Spam research. It contains one set of SMS messages in English of 5,573 messages, tagged according  to ham (legitimate) or spam.
+## Dataset
 
-# Content
+The dataset used for this project is the "SMS Spam Collection" from the UCI Machine Learning Repository. It contains a collection of 5,574 SMS messages, labeled as spam or ham. The dataset can be downloaded from [link to dataset] (https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection).
 
-The files contain one message per line. Each line is composed of two columns: v1 contains the label (ham or spam) and v2 contains the raw text.
+The dataset file (`sms_spam_dataset.csv`) contains two columns:
+- `label`: Indicates whether the message is spam (1) or ham (0).
+- `text`: The actual text content of the SMS message.
 
-This corpus has been collected from free or free for research sources at the Internet:
+## Requirements
 
-A collection of 425 SMS spam messages was manually extracted from the Grumbletext Web site. This is a UK forum in which cell phone users make public claims about SMS spam messages, most of them without reporting the very spam message received. The identification of the text of spam messages in the claims is a very hard and time-consuming task, and it involved carefully scanning hundreds of web pages. The Grumbletext Web site is: [Web Link].
+To run the project, you need the following dependencies:
+- Python 3.x
+- pandas
+- numpy
+- scikit-learn
+- nltk (Natural Language Toolkit)
+- matplotlib
 
-A subset of 3,375 SMS randomly chosen ham messages of the NUS SMS Corpus (NSC), which is a dataset of about 10,000 legitimate messages collected for research at the Department of Computer Science at the National University of Singapore. The messages largely originate from Singaporeans and mostly from students attending the University. These messages were collected from volunteers who were made aware that their contributions were going to be made publicly available. The NUS SMS Corpus is available at: [Web Link].
+You can install the required packages by running the following command:
 
-A list of 450 SMS ham messages collected from Caroline Tag's PhD Thesis available at [Web Link].
+```
+pip install pandas numpy scikit-learn nltk matplotlib
+```
 
-Finally, we have incorporated the SMS Spam Corpus v.0.1 Big. It has 1,002 SMS ham messages and 322 spam messages and it is public available at: [Web Link]. This corpus has been used in the following academic researches:
+## Usage
+
+1. Clone the repository or download the project files.
+
+2. Place the `sms_spam_dataset.csv` file in the project directory.
+
+3. Run the `sms_spam_detection.py` script to train and evaluate the spam detection model.
+
+4. The script will load the dataset, preprocess the text data, and train a machine learning model using the TF-IDF (Term Frequency-Inverse Document Frequency) technique.
+
+5. After training, the model will be evaluated on a holdout set and the performance metrics (such as accuracy, precision, recall, and F1-score) will be displayed.
+
+6. Finally, you can use the trained model to predict the label (spam/ham) of new SMS messages by modifying the `predict` function in the script.
+
+
+## Results
+
+The trained model achieved an **accuracy of 97.10 %** and **Precision is 100 %** on the test set and performed well in terms of precision, recall, and F1-score.
+
+| Metric     | Score |
+|------------|-------|
+| Accuracy   | 97.10 %   |
+| Precision | 100 %   |
+| Recall     | 76.19 %   |
+| F1-score   | 86.49 %   |
+
+## Check out my application on SMS Spam Detection
+
+## Contact
+
+If you have any questions or suggestions regarding the project, feel free to contact **Bibek kumar panda** at **bibek$panda@gmail@gmail.com**.
